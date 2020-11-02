@@ -1,0 +1,52 @@
+.color-navbar {
+  color: transparent;
+}
+
+.text {
+  color: black;
+  margin-top: 15px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+li {
+  padding: 0 25px;
+}
+
+li {
+  position: relative;
+}
+
+li:before {
+  content: '';
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: red;
+  opacity: 0.3;
+  right: 0;
+  z-index: 0;
+  top: 33.33%;
+  transition: all 0.5s;
+}
+
+li:after {
+  content: '';
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: red;
+  opacity: 0.3;
+  left: 0;
+  z-index: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+li:hover:before,
+li:hover:after,
+li:hover a:before {
+  width: 100%;
+}
